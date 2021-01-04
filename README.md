@@ -1,10 +1,13 @@
 # Weewx-Backup
-Bash script to backup weewx on a USB key on Raspberry pi
+Original bash script worked by creating backups ona temporarily mounted USB drive. This modified version creates a backup to a mounted network temp drive that is mapped to `/home/pi/Shares/Temp`.
 
-Plug an USB key ext4 to your raspberry pi
+The backup includes:
+- /var/lib/weewx/weewx.sdb
+- /etc/weewx/weewx.conf
+- /etc/weewx/skins
+- /usr/share/weewx/user
 
-mkdir /media/backup [mounting place of the USB key]
+The name of the tgz archive will be composed of *weewx-date.tgz*
 
-Create a cron-job for dayly or weekly backup
-
-Be sure to run the scrypt with sudo
+On my Pi, the script runs every Sunday at 2 am:
+`0 2 * * 7 /home/pi/weewx_backup.sh`
