@@ -1,11 +1,8 @@
 #!/bin/bash
 #####################################################################
-#																	                                  #
-# Weewx Backup script for Raspberry Pi								              #
-#																	                                  #
-# Modified by Jan Stelling (2021-01-04)								              #
-# after PapyLeCelte (https://github.com/PapyLeCelte/Weewx-Backup)	  #
-#																	                                  #
+# Weewx Backup script for Raspberry Pi
+# Modified by Jan Stelling (2021-01-04)
+# after PapyLeCelte (https://github.com/PapyLeCelte/Weewx-Backup)
 #####################################################################
 
 # Stop weewx daemon
