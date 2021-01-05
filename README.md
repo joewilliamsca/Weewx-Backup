@@ -9,5 +9,5 @@ The backup includes:
 
 The name of the tgz archive will be composed of *weewx-date.tgz*
 
-On my Pi, the script runs every Sunday at 2 am:
+On my Pi, the script runs every Sunday at 2 am as a cron job:
 `0 2 * * 7 /home/pi/weewx_backup.sh`
