@@ -15,7 +15,7 @@ backup_files3="/etc/weewx/skins"
 backup_files4="/usr/share/weewx/user"
 
 # Where to backup
-dest="/home/pi/Shares/Temp"
+dest="/mnt/usb/backups"
 
 # Create archive filename
 day=$(date +%y%m%d)
